@@ -1,0 +1,37 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "target": "es6",
+    "baseUrl": "src/",
+    "paths": {
+      "@": [
+        "src"
+      ],
+      "@interfaces": [
+        "core/interfaces"
+      ],
+      "@interfaces/*": [
+        "core/interfaces/*"
+      ],
+      "@types": [
+        "core/types"
+      ],
+      "@modules": [
+        "core/Modules"
+      ],
+      "@core": [
+        "core/interfaces",
+        "core/types",
+        "core/Modules"
+      ]
+    },
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}
